@@ -1,13 +1,52 @@
 nav {
     background: #fff;
-    padding: 40px 32px 40px 60px ;
-    &-left {
-         h1 {
-        font-weight: 700;
-        font-size: 32px;
-        color: #3563E9;
-        letter-spacing: 1px;
+    padding: 40px 32px 40px 60px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav-left {
+            display: flex;
+            gap: 64px;
+
+            h1 {
+                font-weight: 700;
+                font-size: 32px;
+                color: #3563E9;
+                letter-spacing: 1px;
+
+            }
+
+            .inpt-c {
+                padding: 10px 20px;
+                border: 1px solid rgba(195, 212, 233, 0.4);
+                border-radius: 70px;
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                width: 100%;
+                max-width: 492px;
+
+                input {
+                    flex: 1;
+                }
+            }
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                opacity: 0.8;
+            }
+        }
     }
-    }
-   
+
 }
